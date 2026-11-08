@@ -1,12 +1,14 @@
-// Untuk development dipakai SQLite. Untuk production (mis. Vercel),
-// ganti provider menjadi "postgresql" dan isi DATABASE_URL dengan URL Postgres.
+// Database: PostgreSQL (mis. Neon lewat Vercel Storage, Supabase, atau Postgres lokal).
+// DATABASE_URL          = koneksi utama (boleh pooled)
+// DATABASE_URL_UNPOOLED = koneksi langsung, dipakai untuk migrasi
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DATABASE_URL_UNPOOLED")
 }
 
 model User {
@@ -62,8 +64,8 @@ model TestResult {
   id         String   @id @default(cuid())
   userId     String
   testType   String // "iq" | "personality" | "eq" | "disc"
-  answers    String // JSON string berisi jawaban user
-  result     String // JSON string berisi hasil skor
+  answers    String @db.Text // JSON string berisi jawaban user
+  result     String @db.Text // JSON string berisi hasil skor
   durationMs Int?
   createdAt  DateTime @default(now())
   user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
