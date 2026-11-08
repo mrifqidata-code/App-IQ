@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "MindTest",
+    "tagline": "Get to know yourself through IQ, personality, EQ and DISC tests."
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "history": "History",
+    "logout": "Log out",
+    "language": "Language"
+  },
+  "login": {
+    "title": "Sign in to MindTest",
+    "subtitle": "Sign in to start taking tests and save your results.",
+    "google": "Continue with Google",
+    "googleNotConfigured": "Google login isn't configured yet. Set AUTH_GOOGLE_ID and AUTH_GOOGLE_SECRET in your .env file.",
+    "devTitle": "Dev mode",
+    "devHint": "Only available during development. Enter any name to try the app.",
+    "namePlaceholder": "Your name",
+    "devButton": "Sign in (Dev mode)",
+    "or": "or",
+    "features": ["4 kinds of tests in one app", "Detailed results with charts", "Test history saved automatically"]
+  },
+  "dashboard": {
+    "greeting": "Hi, {name}! 👋",
+    "subtitle": "Choose a test to take.",
+    "start": "Start test",
+    "retake": "Retake test",
+    "questions": "{count} questions",
+    "minutes": "~{count} min",
+    "timed": "Timed",
+    "lastResult": "Latest result",
+    "viewResult": "View result",
+    "recent": "Recent results",
+    "viewAll": "View all",
+    "noResults": "No results yet. Start your first test!"
+  },
+  "test": {
+    "progress": "Question {current} of {total}",
+    "answered": "{count} answered",
+    "prev": "Previous",
+    "next": "Next",
+    "submit": "Finish & see results",
+    "submitting": "Calculating results…",
+    "timeLeft": "Time left",
+    "timeUp": "Time's up! Submitting your answers…",
+    "confirmUnanswered": "{count} questions are still unanswered. Blank answers count as wrong. Submit now?",
+    "mustAnswerAll": "Please answer every question first ({count} left).",
+    "likert": ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"],
+    "likertHint": "How well does this statement describe you?",
+    "discInstruction": "Pick one word that MOST describes you and one word that LEAST describes you.",
+    "most": "Most",
+    "least": "Least",
+    "quit": "Quit",
+    "quitConfirm": "Quit the test? Answers you haven't submitted will be lost.",
+    "intro": {
+      "start": "Start now",
+      "honest": "Answer honestly based on how you usually are, not how you think you should be. There are no right or wrong answers.",
+      "iq": "You have {minutes} minutes for {count} questions. The timer starts when you press start, and your answers are submitted automatically when time runs out.",
+      "navigate": "You can go back to earlier questions any time before submitting."
+    },
+    "error": "Something went wrong while saving your result. Please try again."
+  },
+  "result": {
+    "takenAt": "Taken {date}",
+    "retake": "Retake test",
+    "backDashboard": "Back to dashboard",
+    "disclaimer": "These results are for education and entertainment only, not an official psychological diagnosis. For a professional assessment, consult a licensed psychologist.",
+    "iq": {
+      "score": "Estimated IQ score",
+      "correct": "{correct} of {total} answers correct",
+      "byCategory": "Results by category",
+      "note": "The score is estimated from assumed norms (mean 100, SD 15). This short test does not replace a standardized IQ test."
+    },
+    "personality": {
+      "yourType": "Your personality type",
+      "dimensions": "Personality dimensions",
+      "strengths": "Strengths",
+      "careers": "Fields that may suit you"
+    },
+    "eq": {
+      "overall": "Overall EQ score",
+      "aspects": "Score by area",
+      "tips": "Development tips",
+      "focus": "Focus area"
+    },
+    "disc": {
+      "primary": "Primary style",
+      "secondary": "Secondary style",
+      "profile": "DISC profile",
+      "strengths": "Strengths",
+      "challenges": "Challenges",
+      "workTips": "Tips at work"
+    }
+  },
+  "history": {
+    "title": "Test history",
+    "subtitle": "Every test result you've completed.",
+    "empty": "No test history yet.",
+    "test": "Test",
+    "result": "Result",
+    "date": "Date",
+    "view": "View",
+    "all": "All"
+  }
+}
