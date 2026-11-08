@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "MindTest",
+    "tagline": "Kenali dirimu lewat tes IQ, kepribadian, EQ, dan DISC."
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "history": "Riwayat",
+    "logout": "Keluar",
+    "language": "Bahasa"
+  },
+  "login": {
+    "title": "Masuk ke MindTest",
+    "subtitle": "Masuk untuk mulai mengerjakan tes dan menyimpan hasilmu.",
+    "google": "Masuk dengan Google",
+    "googleNotConfigured": "Login Google belum dikonfigurasi. Isi AUTH_GOOGLE_ID dan AUTH_GOOGLE_SECRET di file .env.",
+    "devTitle": "Dev mode",
+    "devHint": "Hanya tersedia saat development. Masukkan nama apa saja untuk mencoba aplikasi.",
+    "namePlaceholder": "Nama kamu",
+    "devButton": "Masuk (Dev mode)",
+    "or": "atau",
+    "features": ["4 jenis tes dalam satu aplikasi", "Hasil lengkap dengan grafik", "Riwayat tes tersimpan otomatis"]
+  },
+  "dashboard": {
+    "greeting": "Halo, {name}! 👋",
+    "subtitle": "Pilih tes yang ingin kamu kerjakan.",
+    "start": "Mulai tes",
+    "retake": "Ulangi tes",
+    "questions": "{count} soal",
+    "minutes": "± {count} menit",
+    "timed": "Berwaktu",
+    "lastResult": "Hasil terakhir",
+    "viewResult": "Lihat hasil",
+    "recent": "Hasil terbaru",
+    "viewAll": "Lihat semua",
+    "noResults": "Belum ada hasil. Yuk mulai tes pertamamu!"
+  },
+  "test": {
+    "progress": "Soal {current} dari {total}",
+    "answered": "{count} terjawab",
+    "prev": "Sebelumnya",
+    "next": "Berikutnya",
+    "submit": "Selesai & lihat hasil",
+    "submitting": "Menghitung hasil…",
+    "timeLeft": "Sisa waktu",
+    "timeUp": "Waktu habis! Jawabanmu sedang dikirim…",
+    "confirmUnanswered": "Masih ada {count} soal yang belum dijawab. Soal kosong dihitung salah. Kirim sekarang?",
+    "mustAnswerAll": "Jawab semua soal terlebih dahulu ({count} belum dijawab).",
+    "likert": ["Sangat tidak setuju", "Tidak setuju", "Netral", "Setuju", "Sangat setuju"],
+    "likertHint": "Seberapa sesuai pernyataan ini dengan dirimu?",
+    "discInstruction": "Pilih satu kata yang PALING menggambarkan dirimu dan satu kata yang PALING TIDAK menggambarkan dirimu.",
+    "most": "Paling",
+    "least": "Paling tidak",
+    "quit": "Keluar",
+    "quitConfirm": "Keluar dari tes? Jawabanmu yang belum dikirim akan hilang.",
+    "intro": {
+      "start": "Mulai sekarang",
+      "honest": "Jawab dengan jujur sesuai dirimu sehari-hari, bukan yang menurutmu ideal. Tidak ada jawaban benar atau salah.",
+      "iq": "Kamu punya waktu {minutes} menit untuk {count} soal. Waktu berjalan begitu kamu menekan tombol mulai, dan jawaban dikirim otomatis saat waktu habis.",
+      "navigate": "Kamu bisa kembali ke soal sebelumnya kapan saja sebelum mengirim."
+    },
+    "error": "Terjadi kesalahan saat menyimpan hasil. Coba lagi."
+  },
+  "result": {
+    "takenAt": "Dikerjakan {date}",
+    "retake": "Ulangi tes",
+    "backDashboard": "Kembali ke dashboard",
+    "disclaimer": "Hasil tes ini bersifat edukatif dan hiburan, bukan diagnosis psikologis resmi. Untuk asesmen profesional, konsultasikan dengan psikolog berlisensi.",
+    "iq": {
+      "score": "Perkiraan skor IQ",
+      "correct": "{correct} dari {total} jawaban benar",
+      "byCategory": "Hasil per kategori",
+      "note": "Skor diperkirakan dari norma asumsi (rata-rata 100, SD 15). Tes singkat ini tidak menggantikan tes IQ terstandar."
+    },
+    "personality": {
+      "yourType": "Tipe kepribadianmu",
+      "dimensions": "Dimensi kepribadian",
+      "strengths": "Kekuatan",
+      "careers": "Bidang yang mungkin cocok"
+    },
+    "eq": {
+      "overall": "Skor EQ keseluruhan",
+      "aspects": "Skor per aspek",
+      "tips": "Saran pengembangan",
+      "focus": "Fokus pengembangan"
+    },
+    "disc": {
+      "primary": "Gaya utama",
+      "secondary": "Gaya pendukung",
+      "profile": "Profil DISC",
+      "strengths": "Kekuatan",
+      "challenges": "Tantangan",
+      "workTips": "Tips dalam bekerja"
+    }
+  },
+  "history": {
+    "title": "Riwayat tes",
+    "subtitle": "Semua hasil tes yang pernah kamu kerjakan.",
+    "empty": "Belum ada riwayat tes.",
+    "test": "Tes",
+    "result": "Hasil",
+    "date": "Tanggal",
+    "view": "Lihat",
+    "all": "Semua"
+  }
+}
